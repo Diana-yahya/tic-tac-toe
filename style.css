@@ -186,8 +186,8 @@ body {
 
     #reset-btn {
         padding: 8px 20px;
-        font-size: 16px;
-        margin-top: 15px; /* يبعد الزر عن الشبكة */
+        font-size: 18px;
+        margin-top: 10px; /* يبعد الزر عن الشبكة */
         position: static; /* يخلي الزر ياخذ مكانه الطبيعي تحت */
     }
 }
@@ -209,7 +209,7 @@ body {
         width: 20vw;
         height: 20vw;
         padding: 5px;
-        background-color: rgba(195, 195, 85, 0.788) !important; /* لون أصفر دايم */
+        background-color: rgba(240, 240, 7, 0.788) !important; /* لون أصفر دايم */
     }
 
     .square-content {
@@ -223,8 +223,8 @@ body {
 
     #reset-btn {
         padding: 8px 20px;
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 18px;
+        margin-top: 10px;
         position: static !important; /* يخلي الزر ياخذ مكانه الطبيعي */
     }
 }
