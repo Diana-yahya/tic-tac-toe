@@ -153,18 +153,20 @@ body {
     z-index: 10001; /* فوق البلور */
 }
 
-/* تصغير اللعبة على الشاشات الصغيرة */
+/* تصغير اللعبة على الشاشات الصغيرة + تثبيت اللون */
 @media (max-width: 600px) {
     #grid-container {
         padding: 10px;
         border-width: 6px;
-        height: 70vw; /* مربعات أصغر على الجوال */
+        height: 70vw;
     }
 
     .square {
         width: 20vw;
         height: 20vw;
         padding: 5px;
+        background-color: #FFD700 !important; /* أصفر صافي */
+        filter: none !important; /* منع أي تغبيش */
     }
 
     .square-content {
@@ -182,4 +184,5 @@ body {
         top: 70px;
     }
 }
+
 
