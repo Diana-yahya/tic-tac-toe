@@ -191,5 +191,42 @@ body {
         position: static; /* يخلي الزر ياخذ مكانه الطبيعي تحت */
     }
 }
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grid-container {
+        padding: 10px;
+        border-width: 6px;
+        height: auto; /* يخلي الطول يتناسب */
+        background-color: yellow;
+    }
+
+    .square {
+        width: 20vw;
+        height: 20vw;
+        padding: 5px;
+        background-color: rgba(195, 195, 85, 0.788) !important; /* لون أصفر دايم */
+    }
+
+    .square-content {
+        font-size: 8vw;
+    }
+
+    #header {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #reset-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+        margin-top: 15px;
+        position: static !important; /* يخلي الزر ياخذ مكانه الطبيعي */
+    }
+}
 
 
