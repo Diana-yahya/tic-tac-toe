@@ -127,19 +127,18 @@ body {
     opacity: 1;
 }
 
-/* Blur الخلفية عند النتيجة */
 .blurred #all-content {
     filter: blur(5px);
     pointer-events: none;
 }
 
-/* وقت البلور نخفي الفوتر */
+
 .blurred #footer {
     display: none;
 }
 #reset-btn {
     position: absolute;
-    top: 3; /* المسافة تحت الهيدر */
+    top: 3; 
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 30px;
@@ -150,83 +149,39 @@ body {
     cursor: pointer;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s;
-    z-index: 10001; /* فوق البلور */
+    z-index: 10001; 
 }
 
-/* تصميم للجوال */
 @media (max-width: 600px) {
     body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
         display: flex;
         flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        overflow: hidden; 
+    }
+
+    #header-and-board-wrapper {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     #grid-container {
-        padding: 10px;
-        border-width: 6px;
-        height: auto; /* يخلي الطول يتناسب مع المحتوى */
-        background-color: yellow; /* لون أصفر للمربعات */
-    }
-
-    .square {
-        width: 20vw;
-        height: 20vw;
         padding: 5px;
-        background-color: yellow; /* لون المربعات */
-    }
-
-    .square-content {
-        font-size: 8vw;
-    }
-
-    #header {
-        width: 90%;
-        font-size: 14px;
+        height: auto;
     }
 
     #reset-btn {
-        padding: 8px 20px;
-        font-size: 18px;
-        margin-top: 10px; /* يبعد الزر عن الشبكة */
-        position: static; /* يخلي الزر ياخذ مكانه الطبيعي تحت */
-    }
-}
-@media (max-width: 600px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #grid-container {
-        padding: 10px;
-        border-width: 6px;
-        height: auto; /* يخلي الطول يتناسب */
-        background-color: yellow;
-    }
-
-    .square {
-        width: 20vw;
-        height: 20vw;
-        padding: 5px;
-        background-color: rgba(240, 240, 7, 0.788) !important; /* لون أصفر دايم */
-    }
-
-    .square-content {
-        font-size: 8vw;
-    }
-
-    #header {
-        width: 90%;
-        font-size: 14px;
-    }
-
-    #reset-btn {
-        padding: 8px 20px;
-        font-size: 18px;
         margin-top: 10px;
-        position: static !important; /* يخلي الزر ياخذ مكانه الطبيعي */
+        position: static;
     }
 }
+
 
 
