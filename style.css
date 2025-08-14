@@ -153,4 +153,33 @@ body {
     z-index: 10001; /* فوق البلور */
 }
 
+/* تصغير اللعبة على الشاشات الصغيرة */
+@media (max-width: 600px) {
+    #grid-container {
+        padding: 10px;
+        border-width: 6px;
+        height: 70vw; /* مربعات أصغر على الجوال */
+    }
+
+    .square {
+        width: 20vw;
+        height: 20vw;
+        padding: 5px;
+    }
+
+    .square-content {
+        font-size: 8vw;
+    }
+
+    #header {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    #reset-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+        top: 70px;
+    }
+}
 
