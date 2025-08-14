@@ -153,20 +153,26 @@ body {
     z-index: 10001; /* فوق البلور */
 }
 
-/* تصغير اللعبة على الشاشات الصغيرة + تثبيت اللون */
+/* تصميم للجوال */
 @media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #grid-container {
         padding: 10px;
         border-width: 6px;
-        height: 70vw;
+        height: auto; /* يخلي الطول يتناسب مع المحتوى */
+        background-color: yellow; /* لون أصفر للمربعات */
     }
 
     .square {
         width: 20vw;
         height: 20vw;
         padding: 5px;
-        background-color: #FFD700 !important; /* أصفر صافي */
-        filter: none !important; /* منع أي تغبيش */
+        background-color: yellow; /* لون المربعات */
     }
 
     .square-content {
@@ -181,7 +187,8 @@ body {
     #reset-btn {
         padding: 8px 20px;
         font-size: 16px;
-        top: 70px;
+        margin-top: 15px; /* يبعد الزر عن الشبكة */
+        position: static; /* يخلي الزر ياخذ مكانه الطبيعي تحت */
     }
 }
 
